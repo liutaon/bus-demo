@@ -1,0 +1,10 @@
+{
+    "namespace": "tiimii.bus.model",
+     "type": "record",
+     "name": "Shop",
+     "fields":[
+         {  "name": "id", "type": "int" },
+         {   "name": "name",  "type": "string" },
+         {   "name": "email", "type": ["string", "null"] }
+     ]
+}

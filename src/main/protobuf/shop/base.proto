@@ -1,0 +1,22 @@
+syntax = "proto3";
+package tiimii.bus.model;
+
+message SearchRequest {
+  string query = 1 ; // 查询条件
+  int32 page_number = 2; // 页数
+  int32 result_per_page = 3; // 每页条数
+}
+
+message SearchResponse {
+  repeated Result results = 1;
+}
+
+message Result {
+  string url = 1;
+  string title = 2;
+  repeated string snippets = 3;
+}
+
+message SongServerRequest {
+  string song_name = 1;
+}
